@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  before_action :get_book, only: [:show, :edit, :update]
+  before_action :get_book, only: [:show, :edit, :update, :destroy]
 
   def create
     book = Book.new(book_params)
@@ -8,6 +8,8 @@ class BooksController < ApplicationController
   end
 
   def destroy
+    @book.destroy
+    redirect_to books_path
   end
 
   def edit
