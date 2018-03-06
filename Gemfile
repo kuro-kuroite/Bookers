@@ -11,6 +11,7 @@ gem 'jquery-rails'
 
 # Use pagination
 gem 'kaminari'
+gem 'kaminari-bootstrap'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
