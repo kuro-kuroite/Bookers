@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+  before_action :get_book, only: [:show]
+
   def create
     book = Book.new(book_params)
     book.save
@@ -29,5 +31,9 @@ class BooksController < ApplicationController
 
     def book_params
       params.require(:book).permit(:title, :comment)
+    end
+
+    def get_book
+      @book = Book.find(params[:id])
     end
 end
