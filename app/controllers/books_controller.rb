@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  before_action :get_book, only: [:show]
+  before_action :get_book, only: [:show, :edit]
 
   def create
     book = Book.new(book_params)
