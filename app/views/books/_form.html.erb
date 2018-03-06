@@ -1,0 +1,9 @@
+<%= form_for(@book) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, class: 'form-control' %>
+
+  <%= f.label :comment %>
+  <%= f.text_area :comment, class: 'form-control' %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
