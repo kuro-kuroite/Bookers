@@ -9,6 +9,9 @@ end
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 
+# Use pagination
+gem 'kaminari'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use sqlite3 as the database for Active Record
