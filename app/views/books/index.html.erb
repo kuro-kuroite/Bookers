@@ -23,7 +23,11 @@
   </tbody>
 </table>
 
-<%= render 'form', book: @book  %>
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <%= render 'form', book: @book  %>
+  </div>
+</div>
 
 <%# FIXME: kaminari-bootstrap が認識されない %>
 <%# おそらく, Bootstrap 4 に非対応 %>
